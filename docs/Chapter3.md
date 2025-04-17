@@ -34,7 +34,7 @@ T=1/f
 - 总占空比 = 0.5/1 = 50%  
 
 控制LED的通断时间比例（占空比）如下图：  
-<img src="../public/Chapter3/image2.png" width="450" />
+<img src="../public/Chapter3/image2.png" width="650" />
 
 ## 5. 控制流程
 
