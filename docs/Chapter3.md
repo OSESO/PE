@@ -21,7 +21,7 @@ T=1/f
 **单位**：%（0%-100%）  
 **表示方式**：20%  
 
-![占空比示意图1](../public/Chapter3/image1.png)
+<img src="../public/Chapter3/image1.png" width="400"/>
 
 **周期为T**  
 - T1为高电平时间  
@@ -34,7 +34,7 @@ T=1/f
 - 总占空比 = 0.5/1 = 50%  
 
 控制LED的通断时间比例（占空比）如下图：  
-![LED控制示意图](../public/Chapter3/image2.png)
+<img src="../public/Chapter3/image2.png" width="450" />
 
 ## 5. 控制流程
 
