@@ -10,7 +10,7 @@
 
 如图所示，在示例设计中LED与单片机的P2.0引脚相连，如果你连接了其他引脚也没关系，在后面程序设计时候修改对应的信号即可.  
 
-根据二极管的原理，它在电路中与正负极相连才能够点亮，当P2.0输出高电平时，P2.0与VCC电位相近，LED两端没有足够的电压差，没有电流流过LED，LED不会亮。当P2.0输出低电平时，P2.0与GND电位相近，LED两端有足够的电压差，电流流过LED，LED会亮。
+根据二极管的原理，它在电路中与正负极相连才能够点亮，当P2.0输出高电平时，P2.0与VCC电位相近，LED两端没有足够的电压差，没有电流流过LED，LED不会亮. 当P2.0输出低电平时，P2.0与GND电位相近，LED两端有足够的电压差，电流流过LED，LED会亮. 
 
 ## 建立工程
 
@@ -18,15 +18,15 @@
 
 在弹出的Select Device窗口中的第一个下拉栏里选择STC MCU Database，并Search 89C52RC，选中后点击OK. 然后会弹出一个启动文件窗口，这里我们选择否.  
 
-<img src="../public/Chapter2/fig2.png" alt="Select Device" width="700"/>  
+<img src="../public/Chapter2/Fig2.png" alt="Select Device" width="700"/>  
 
 今后我们的开发就会在如上的窗口进行.
 
 为了创建第一个C文件，我们在Project窗口中展开Target1，右键点击"Source Group 1"，选择"Add New Item to Group 'Source Group 1'"，在弹出的窗口中选择"C File", 为文件命名，点击保存.
 
-<img src="../public/Chapter2/fig3.png" alt="Add New Item" width="500"/>  
+<img src="../public/Chapter2/Fig3.png" alt="Add New Item" width="500"/>  
 
-<img src="../public/Chapter2/fig4.png" alt="Add New Item" width="500"/>  
+<img src="../public/Chapter2/Fig4.png" alt="Add New Item" width="500"/>  
 
 ## 程序编写
 
@@ -52,10 +52,10 @@ void main()
 compiling main.c...
 main.c - 0 Error(s), 0 Warning(s).
 ```
-编译成功后，我们可以看到报错和警告都为0，可以构建为能够下载到单片机上的HEX文件了。这里需要注意的是，在构建之前，我们需要配置一下工程，单击一下第三行的Options for Target图标(如图所示)  
-<img src="../public/Chapter2/fig6.png" alt="Build" width="500"/>  
+编译成功后，我们可以看到报错和警告都为0，可以构建为能够下载到单片机上的HEX文件了. 这里需要注意的是，在构建之前，我们需要配置一下工程，单击一下第三行的Options for Target图标(如图所示)  
+<img src="../public/Chapter2/Fig6.png" alt="Build" width="500"/>  
 找到Output选项卡，勾选上Create HEX File，以使其生成HEX文件.  
-<img src="../public/Chapter2/fig5.png" alt="Build" width="500"/>  
+<img src="../public/Chapter2/Fig5.png" alt="Build" width="500"/>  
 勾选后点击OK.
 
 接下来，我们就可以构建工程了，单击编译右侧的Build图标，能看到控制台输出了
@@ -70,7 +70,7 @@ Build Time Elapsed:  00:00:00
 
 ## 程序烧录
 
-如何将生成的HEX文件烧录到单片机中呢，这里我们使用USB-TTL转接器把PC与单片机进行连接。
+如何将生成的HEX文件烧录到单片机中呢，这里我们使用USB-TTL转接器把PC与单片机进行连接. 
 首先使用杜邦线连接USB-TTL转接器的4个引脚到单片机的4个引脚：
 
 - USB-TTL转接器的VCC引脚连接到单片机的VCC引脚
@@ -79,12 +79,12 @@ Build Time Elapsed:  00:00:00
 - USB-TTL转接器的RXD引脚连接到单片机的TXD引脚
 
 TXD和RXD的位置可以在引脚图上查看  
-<img src="../public/Chapter2/fig7.png" alt="引脚图" width="450"/>  
+<img src="../public/Chapter2/Fig7.png" alt="引脚图" width="450"/>  
 
 连接好后，插入USB-TTL转接器到电脑的USB接口，打开STC-ISP工具，在左上角的芯片型号处的下拉栏中选中STC89C52RC，调整波特率为最低1200，最高2400.  
 
-<img src="../public/Chapter2/fig8.png" alt="STC-ISP" width="700"/>  
+<img src="../public/Chapter2/Fig8.png" alt="STC-ISP" width="700"/>  
 
-然后点击"打开程序文件", 选择工程目录下的Objects文件夹中的"工程名.hex"文件并打开。
+然后点击"打开程序文件", 选择工程目录下的Objects文件夹中的"工程名.hex"文件并打开. 
 
 点击"下载"，会进入检测目标单片机状态中，按下单片机的开关键，程序应该能识别到单片机，等待烧录完成，LED灯亮起.
