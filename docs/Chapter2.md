@@ -18,7 +18,7 @@
 
 在弹出的Select Device窗口中的第一个下拉栏里选择STC MCU Database，并Search 89C52RC，选中后点击OK. 然后会弹出一个启动文件窗口，这里我们选择否.  
 
-<img src="../public/Chapter2/Fig2.png" alt="Select Device" width="700"/>  
+<img src="../public/Chapter2/FIg2.png" alt="Select Device" width="700"/>  
 
 今后我们的开发就会在如上的窗口进行.
 
@@ -53,7 +53,7 @@ compiling main.c...
 main.c - 0 Error(s), 0 Warning(s).
 ```
 编译成功后，我们可以看到报错和警告都为0，可以构建为能够下载到单片机上的HEX文件了. 这里需要注意的是，在构建之前，我们需要配置一下工程，单击一下第三行的Options for Target图标(如图所示)  
-<img src="../public/Chapter2/Fig6.png" alt="Build" width="500"/>  
+<img src="../public/Chapter2/FIg6.png" alt="Build" width="500"/>  
 找到Output选项卡，勾选上Create HEX File，以使其生成HEX文件.  
 <img src="../public/Chapter2/Fig5.png" alt="Build" width="500"/>  
 勾选后点击OK.
