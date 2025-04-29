@@ -26,7 +26,7 @@
 ![alt text](../../public/PE_resource/power_module/船型开关.jpg)
 - 其余贴片器件只限制封装
 电阻、电容、LED灯使用0603贴片封装即可
-- 附上<a href="../../public/PE_resource/power_module/工作室物料清单.xls" target="download">工作室物料清单</a>，请优先依照该物料清单进行原理图设计
+- 附上<a href="/public/PE_resource/power_module/工作室物料清单.xls" target="download">工作室物料清单</a>，请优先依照该物料清单进行原理图设计
 
 ### 注意事项（也是得分扣分点）
 - 所有接口类器件应靠近板边摆放，方便插拔
